@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ block "title" . }}
+      {{ .Site.Title }}
+    {{ end }}</title>
+  </head>
+  <body class="{{ .Params.bodyClass }}">
+    {{ block "main" . }}
+      default body
+    {{ end }}
+  </body>
+</html>
