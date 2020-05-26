@@ -1,0 +1,11 @@
+---
+title: my data
+---
+
+<h1>hi {{.Title}}</h1>
+<p>For some reason this page will not render the dynamic parts.</p>
+<ul>
+  {{ range .Site.Data.mydata }}
+    <li>{{.}}</li>
+  {{ end }}
+</ul>
